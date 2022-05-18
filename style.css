@@ -98,7 +98,7 @@ header .user img{
     width:17rem;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 3px solid rgb(150, 117, 180);
+    border-color: 3px solid rgb(150, 117, 180);
 }
 
 header .user .name{
