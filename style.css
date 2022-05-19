@@ -48,14 +48,14 @@ section{
 }
 
 .btn{
-    padding:.7rem 3rem;
+    padding:1rem 3rem;
     background:#333;
     color:#fff;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
     border-radius: 5rem;
-    border:1px solid rgb(150, 117, 180);
+    border: 1px solid rgb(140, 97, 180);
 }
 
 .btn i{
@@ -94,13 +94,27 @@ header{
     text-align: center;
 }
 
-header .user img{
+header .user .img{
+    position: relative;
     height:17rem;
     width:17rem;
-    object-fit: cover;
     margin-bottom: 1rem;
-    border: 3px solid rgb(150, 117, 180);
+    margin: 0 auto;
+    border: 1px solid rgb(182, 136, 224);
 }
+header .user .img img{
+    position: absolute;
+    height:16rem;
+    width:16rem;
+    object-fit: cover;
+    left: 0;
+    bottom:0;
+}
+
+
+
+
+
 
 header .user .name{
     font-size: 3.5rem;
@@ -118,19 +132,20 @@ header .navbar{
 
 header .navbar ul{
     list-style: none;
-    padding:1rem 3rem;
+    padding:1rem .5rem;
 }
 
 
 header .navbar ul li a{
     display: block;
-    padding:1rem;
+    padding:1rem 3rem;
     margin:1.5rem 0;
     background:#333;
     color:#fff;
     font-size: 2rem;
     border-radius: 5rem;
     border:1px solid rgb(150, 117, 180) ;
+    text-align: left;
 }
 
 header .navbar ul li a:hover{
@@ -232,7 +247,7 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding:1rem 0;
+    padding:50px 0;
     padding-left: 3rem;
 }
 
@@ -302,6 +317,59 @@ header .navbar ul li a:hover{
 
 .portfolio .box-container .box:hover img{
     transform: scale(1.2);
+}
+.Project .row{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.Project .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.Project .row .info h3{
+    font-size: 2rem;
+    color:var(--yellow);
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.Project .row .info h3 span{
+    color:#eee;
+    padding:0 .5rem;
+}
+
+.Project .row p{
+    font-size: 20px;
+    color: white;
+} 
+.Project .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Project .row .counter .box{
+    width:20rem;
+    background:#222;
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+}
+
+.Project .row .counter .box span{
+    font-size: 4rem;
+    color:var(--yellow);
+}
+
+.Project .row .counter .box h3{
+    font-size: 2rem;
+    color:#fff;
 }
 
 .contact .row{
